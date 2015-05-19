@@ -1,4 +1,0 @@
-Assign5.o: Assign5.cpp Assign5.hpp
-BestFit.o: BestFit.cpp Assign5.hpp
-FirstFit.o: FirstFit.cpp includes/List.hpp includes/globals.hpp \
-  Assign5.hpp

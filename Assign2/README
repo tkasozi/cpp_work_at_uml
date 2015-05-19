@@ -1,0 +1,24 @@
+Talik Kasozi 
+Operating System 
+Assignment #2
+October 2, 2014
+
+1. Sort.c/ sort : There are no errors and every thing works as intended. 
+
+2. grep using cs308a2_grep_data_1 file works as intended and there are no errors. However, for a with more 
+than 1 number matched, will only be counted once. i.e
+
+744509763 400011959 1440466707
+
+here 44 would only be counted once.
+
+3. grep using cs308a2_grep_data_2 file, here the program doesn't finish running because of the following:
+    
+ (i) The way grep works is such that it matches strings as the parent pushes the data to the child's In pipe.
+This would be great if the data wasn't much but in this case the data is too much that when grep tries to push data out to child's pipe out,
+the pipe fill up causing grep , child to block. 
+
+ (ii) While child is in block as the pipe is full and the parent keeps sending data to child for grep, eventually the parent also blocks causing a
+deadlock to occur. Hence Ctrl XC to exit the process.  
+
+Summary: This file fails because it has a lot of data which cause the pipe[1] to fill up leading the child and parent to block causing a deadlock.  

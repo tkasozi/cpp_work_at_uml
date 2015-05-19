@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="94">
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>4</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>./assign5 buddy 1024 proj5_data >buddy_output_1024</runcommandpicklistitem>
+          <runcommandpicklistitem>./assign5 buddy 512 proj5_data >buddy_output_512</runcommandpicklistitem>
+          <runcommandpicklistitem>./assign5 buddy 256 proj5_data >buddy_output_256</runcommandpicklistitem>
+          <runcommandpicklistitem>./assign5 best 512 proj5_data >best_output_1024</runcommandpicklistitem>
+          <runcommandpicklistitem>./assign5 best 256 proj5_data >best_output_256</runcommandpicklistitem>
+          <runcommandpicklistitem>./assign5 best 1024 proj5_data >best_output_1024</runcommandpicklistitem>
+          <runcommandpicklistitem>./assign5 best 512 proj5_data >best_output_512</runcommandpicklistitem>
+          <runcommandpicklistitem>./assign5 first 1024 proj5_data >first_output_1024</runcommandpicklistitem>
+          <runcommandpicklistitem>./assign5 first 512 proj5_data >first_output_512</runcommandpicklistitem>
+          <runcommandpicklistitem>./assign5 first 256 proj5_data >first_output_256</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>./assign5 first 256 proj5_data >first_output_256</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>4</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

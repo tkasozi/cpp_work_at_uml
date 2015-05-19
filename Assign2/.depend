@@ -1,0 +1,3 @@
+Pipe.o: Pipe.cpp globals.hpp
+grep.o: grep.cpp globals.hpp
+sort.o: sort.cpp globals.hpp

@@ -1,0 +1,120 @@
+Talik Kasozi
+talik.aziizi@gmail.com
+
+Assignment 6 Dec 9, 2014
+
+Implementation as discussed in class. This Assignment is 100% complete. And works as intended.
+
+
+Sample:
+
+File: .
+Type: directory
+Permissions: rwxr-w-wx
+Owner: apple
+Group: staff
+Last Modified: Tue Dec  9 17:06:07 2014
+Links: 10
+Size: 340
+I-Node Number: 4635059
+
+
+File: ..
+Type: directory
+Permissions: rwxr-w-wx
+Owner: apple
+Group: staff
+Last Modified: Tue Dec  9 16:31:19 2014
+Links: 10
+Size: 340
+I-Node Number: 1360631
+
+
+File: .dep.inc
+Type: regular file
+Permissions: rw-r---w-
+Owner: apple
+Group: staff
+Last Modified: Tue Dec  9 16:20:09 2014
+Links: 1
+Size: 144
+I-Node Number: 4635366
+
+
+File: .depend
+Type: regular file
+Permissions: rw-r---w-
+Owner: apple
+Group: staff
+Last Modified: Tue Dec  9 16:42:03 2014
+Links: 1
+Size: 23
+I-Node Number: 4745290
+
+
+File: Assign6
+Type: regular file
+Permissions: rwxr-w-wx
+Owner: apple
+Group: staff
+Last Modified: Tue Dec  9 17:06:07 2014
+Links: 1
+Size: 20608
+I-Node Number: 4746483
+
+
+File: Assign6.cpp
+Type: regular file
+Permissions: rw-r---w-
+Owner: apple
+Group: staff
+Last Modified: Tue Dec  9 17:06:01 2014
+Links: 1
+Size: 3880
+I-Node Number: 4635085
+
+
+File: Assign6.o
+Type: regular file
+Permissions: rw-r---w-
+Owner: apple
+Group: staff
+Last Modified: Tue Dec  9 17:06:07 2014
+Links: 1
+Size: 12704
+I-Node Number: 4746482
+
+
+File: Makefile
+Type: regular file
+Permissions: rw-r---w-
+Owner: apple
+Group: staff
+Last Modified: Tue Dec  9 17:02:04 2014
+Links: 1
+Size: 226
+I-Node Number: 4745266
+
+
+File: OUTPUT
+Type: regular file
+Permissions: rw-r---w-
+Owner: apple
+Group: staff
+Last Modified: Tue Dec  9 17:06:17 2014
+Links: 1
+Size: 1325
+I-Node Number: 4746026
+
+
+File: README
+Type: regular file
+Permissions: rw-r---w-
+Owner: apple
+Group: staff
+Last Modified: Tue Dec  9 16:57:37 2014
+Links: 1
+Size: 1816
+I-Node Number: 4745076
+
+

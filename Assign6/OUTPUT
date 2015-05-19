@@ -1,0 +1,370 @@
+File: /
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sun Oct 26 01:36:47 2014
+Links: 30
+Size: 1088
+I-Node Number: 2
+
+File: /Applications
+Type: directory
+Permissions: rwxrww-wx
+Owner: root
+Group: admin
+Last Modified: Wed Dec  3 16:07:59 2014
+Links: 40
+Size: 1360
+I-Node Number: 2556661
+
+File: /Library
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 17:19:28 2014
+Links: 63
+Size: 2142
+I-Node Number: 2556562
+
+File: /Network
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Tue Sep  9 16:47:33 2014
+Links: 2
+Size: 68
+I-Node Number: 2841372
+
+File: /System
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 16:01:28 2014
+Links: 4
+Size: 136
+I-Node Number: 2556558
+
+File: /Users
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: admin
+Last Modified: Fri Oct 24 16:50:37 2014
+Links: 6
+Size: 204
+I-Node Number: 156748
+
+File: /Volumes
+Type: directory
+Permissions: rwxrwwrwx
+Owner: root
+Group: admin
+Last Modified: Sat Nov 29 07:04:08 2014
+Links: 3
+Size: 102
+I-Node Number: 13703
+
+File: /bin
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 16:02:42 2014
+Links: 39
+Size: 1326
+I-Node Number: 2567999
+
+File: /cores
+Type: directory
+Permissions: rwxrww-wx
+Owner: root
+Group: admin
+Last Modified: Tue Sep  9 16:47:31 2014
+Links: 2
+Size: 68
+I-Node Number: 2841577
+
+File: /dev
+Type: directory
+Permissions: r-xr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Wed Nov 26 06:29:15 2014
+Links: 3
+Size: 4330
+I-Node Number: 299
+
+File: /etc
+Type: symlink
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 15:52:10 2014
+Links: 1
+Size: 11
+I-Node Number: 2576285
+
+File: /home
+Type: directory
+Permissions: r-xr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Wed Nov 26 06:30:18 2014
+Links: 2
+Size: 1
+I-Node Number: 5
+
+File: /installer.failurerequests
+Type: regular file
+Permissions: rw-r---w-
+Owner: root
+Group: wheel
+Last Modified: Wed Oct  1 02:12:13 2014
+Links: 1
+Size: 313
+I-Node Number: 2735255
+
+File: /net
+Type: directory
+Permissions: r-xr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Wed Nov 26 06:30:18 2014
+Links: 2
+Size: 1
+I-Node Number: 3
+
+File: /private
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 16:06:00 2014
+Links: 6
+Size: 204
+I-Node Number: 2556540
+
+File: /sbin
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Tue Nov 18 22:50:45 2014
+Links: 59
+Size: 2006
+I-Node Number: 2557886
+
+File: /tmp
+Type: symlink
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 15:54:19 2014
+Links: 1
+Size: 11
+I-Node Number: 2605904
+
+File: /usr
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 17:19:33 2014
+Links: 11
+Size: 374
+I-Node Number: 2556561
+
+File: /var
+Type: symlink
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 15:54:28 2014
+Links: 1
+Size: 11
+I-Node Number: 2606298
+
+File: /Applications
+Type: directory
+Permissions: rwxrww-wx
+Owner: root
+Group: admin
+Last Modified: Wed Dec  3 16:07:59 2014
+Links: 40
+Size: 1360
+I-Node Number: 2556661
+
+File: /Library
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 17:19:28 2014
+Links: 63
+Size: 2142
+I-Node Number: 2556562
+
+File: /Network
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Tue Sep  9 16:47:33 2014
+Links: 2
+Size: 68
+I-Node Number: 2841372
+
+File: /System
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 16:01:28 2014
+Links: 4
+Size: 136
+I-Node Number: 2556558
+
+File: /Users
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: admin
+Last Modified: Fri Oct 24 16:50:37 2014
+Links: 6
+Size: 204
+I-Node Number: 156748
+
+File: /Volumes
+Type: directory
+Permissions: rwxrwwrwx
+Owner: root
+Group: admin
+Last Modified: Sat Nov 29 07:04:08 2014
+Links: 3
+Size: 102
+I-Node Number: 13703
+
+File: /bin
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 16:02:42 2014
+Links: 39
+Size: 1326
+I-Node Number: 2567999
+
+File: /cores
+Type: directory
+Permissions: rwxrww-wx
+Owner: root
+Group: admin
+Last Modified: Tue Sep  9 16:47:31 2014
+Links: 2
+Size: 68
+I-Node Number: 2841577
+
+File: /dev
+Type: directory
+Permissions: r-xr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Wed Nov 26 06:29:15 2014
+Links: 3
+Size: 4330
+I-Node Number: 299
+
+File: /etc
+Type: symlink
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 15:52:10 2014
+Links: 1
+Size: 11
+I-Node Number: 2576285
+
+File: /home
+Type: directory
+Permissions: r-xr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Wed Nov 26 06:30:18 2014
+Links: 2
+Size: 1
+I-Node Number: 5
+
+File: /installer.failurerequests
+Type: regular file
+Permissions: rw-r---w-
+Owner: root
+Group: wheel
+Last Modified: Wed Oct  1 02:12:13 2014
+Links: 1
+Size: 313
+I-Node Number: 2735255
+
+File: /net
+Type: directory
+Permissions: r-xr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Wed Nov 26 06:30:18 2014
+Links: 2
+Size: 1
+I-Node Number: 3
+
+File: /private
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 16:06:00 2014
+Links: 6
+Size: 204
+I-Node Number: 2556540
+
+File: /sbin
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Tue Nov 18 22:50:45 2014
+Links: 59
+Size: 2006
+I-Node Number: 2557886
+
+File: /tmp
+Type: symlink
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 15:54:19 2014
+Links: 1
+Size: 11
+I-Node Number: 2605904
+
+File: /usr
+Type: directory
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 17:19:33 2014
+Links: 11
+Size: 374
+I-Node Number: 2556561
+
+File: /var
+Type: symlink
+Permissions: rwxr-w-wx
+Owner: root
+Group: wheel
+Last Modified: Sat Oct 18 15:54:28 2014
+Links: 1
+Size: 11
+I-Node Number: 2606298
+

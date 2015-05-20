@@ -1,0 +1,796 @@
+Talik Kasozi  talik.aziizi@gmail.com
+cs308
+Assignment #4
+October 21, 2014
+
+NOTE: WHEN YOU RUN THE PROJECT  YOU WILL PRODUCE FILES NAMED "consumer1,...,consumer50"
+i.e. JUST SO I CAN SEND MY WORK, I DELETE ALL THOSE FILE WITH "make clean" SO ALL YOU HAVE
+TO DO TO GET THEM BACK IS RUN THE PROJECT. HOWEVER, I HAVE INCLUDED IN THIS WRITEUP A SAMPLE
+OF WHAT YOU WILL SEE WHEN YOU OPEN THESE FILE. THE SAMPLE IS THE FIRST 10 DOZENS FOR 5 CONSUMER THREADS.
+
+
+i.   I Had problem with the script, where I changed the exe. name and forgot to change it
+everywhere. So when I was testing the  project the script wasn't killing the pids
+or tell me how many deadlocks.. I eventually fig. it out problem solved and the project works
+as intended, everything works. 
+
+I also had a prob. with the c++ lib. for files I used. For some
+reason it worked on my laptop but when I uploaded the proj. to the server I was getting 100% deadlock.
+When I switched my File stuff to c everything was fine!!
+
+ii.    When the queue size is 1000 and more then we get a 0 deadlock. In other words the
+smaller the queue the higher the chances of getting deadlock. Collecting 200 dozens of donuts, 
+and using a queue of 500 we get 50% deadlock.
+
+iii.   The converse is false. I.e With 500 the more dozens you collect after 200 dozens the more
+deadlocks you get.
+
+Sample of output first 10 dozens of 5 consumers pick at random in order:
+
+Consumer thread#: 1 time: 01:03 PM. dozen #: 1
+
+plain	jelly	coconut	honey-dip
+ 1	  1	 1	 1	
+ 2	  2	 2	 2	
+	  3		 3	
+	  4		
+	  5		
+			
+			
+						
+			
+
+Consumer thread#: 1 time: 01:03 PM. dozen #: 2
+
+plain	jelly	coconut	honey-dip
+ 205	  153	 155	 173	
+ 221	  172	 171	 174	
+	  191		 175	
+	  197		 176	
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 1 time: 01:03 PM. dozen #: 3
+
+plain	jelly	coconut	honey-dip
+ 298	  274	 287	 273	
+ 311	  279	 332	 359	
+ 326	  290		
+	  362		
+	  377		
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 1 time: 01:03 PM. dozen #: 4
+
+plain	jelly	coconut	honey-dip
+ 442	  435	 483	 474	
+ 482	  470		 512	
+ 534	  507		
+ 568	  523		
+	  562		
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 1 time: 01:03 PM. dozen #: 5
+
+plain	jelly	coconut	honey-dip
+ 628	  656	 618	 651	
+ 654		 655	 676	
+ 686		 656	 677	
+ 722		 681	
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 1 time: 01:03 PM. dozen #: 6
+
+plain	jelly	coconut	honey-dip
+	  758	 764	 779	
+	  759	 765	 780	
+	  760	 766	
+	  761	 767	
+		 768	
+		 769	
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 1 time: 01:03 PM. dozen #: 7
+
+plain	jelly	coconut	honey-dip
+ 846	  878	 867	 830	
+ 882		 874	 892	
+ 939		 881	 893	
+			 908	
+			 916	
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 1 time: 01:03 PM. dozen #: 8
+
+plain	jelly	coconut	honey-dip
+ 1014	  1080	 951	 978	
+ 1054	  1081	 1074	 979	
+ 1087	  1105		
+ 1121			
+ 1157			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 1 time: 01:03 PM. dozen #: 9
+
+plain	jelly	coconut	honey-dip
+ 1225	  1135	 1301	 1215	
+ 1263	  1286		 1317	
+ 1301	  1287		
+ 1337			
+ 1374			
+ 1414			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 1 time: 01:03 PM. dozen #: 10
+
+plain	jelly	coconut	honey-dip
+ 1490	  1457	 1386	 1556	
+ 1524	  1458	 1417	
+ 1559		 1503	
+ 1596		 1504	
+ 1630			
+			
+
+Consumer thread#: 5 time: 01:03 PM. dozen #: 1
+
+plain	jelly	coconut	honey-dip
+ 18	  10	 15	 16	
+ 19	  12	 16	
+ 20		 17	
+ 21		 18	
+		 19	
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 5 time: 01:03 PM. dozen #: 2
+
+plain	jelly	coconut	honey-dip
+ 222	  160	 159	 250	
+ 240	  161	 176	 251	
+	  162	 196	 252	
+			 253	
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 5 time: 01:03 PM. dozen #: 3
+
+plain	jelly	coconut	honey-dip
+ 290	  418	 298	 347	
+ 314		 383	 384	
+ 338			 408	
+ 359			 425	
+ 387			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 5 time: 01:03 PM. dozen #: 4
+
+plain	jelly	coconut	honey-dip
+ 475	  467	 584	 460	
+ 510	  499		 554	
+ 529	  556		 555	
+ 561	  591		
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 5 time: 01:03 PM. dozen #: 5
+
+plain	jelly	coconut	honey-dip
+ 652	  657	 646	 693	
+ 715	  671	 648	 706	
+	  682	 674	
+	  709		
+	  710		
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 5 time: 01:03 PM. dozen #: 6
+
+plain	jelly	coconut	honey-dip
+ 789	  794	 751	 814	
+ 823	  795	 752	 815	
+	  796	 791	 841	
+	  797		
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 5 time: 01:03 PM. dozen #: 7
+
+plain	jelly	coconut	honey-dip
+ 936	  873	 864	 884	
+ 971	  874	 872	 971	
+ 1006		 879	 972	
+		 972	
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 5 time: 01:03 PM. dozen #: 8
+
+plain	jelly	coconut	honey-dip
+ 1086	  1021	 1168	 1031	
+ 1118	  1076		 1068	
+ 1154	  1147		
+ 1189	  1148		
+	  1149		
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 5 time: 01:03 PM. dozen #: 9
+
+plain	jelly	coconut	honey-dip
+	  1170	 1189	 1208	
+	  1171	 1190	 1209	
+		 1191	 1210	
+		 1192	
+		 1193	
+		 1194	
+		 1195	
+			
+			
+			
+			
+			
+
+Consumer thread#: 5 time: 01:03 PM. dozen #: 10
+
+plain	jelly	coconut	honey-dip
+ 1304	  1246	 1264	 1248	
+ 1339		 1265	 1276	
+			 1277	
+			 1278	
+			 1279	
+			 1318	
+			 1319	
+			
+Consumer thread#: 15 time: 01:03 PM. dozen #: 1
+
+plain	jelly	coconut	honey-dip
+ 47	  38	 43	 44	
+ 48	  39	 44	 45	
+ 49		 45	
+ 50		 46	
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 15 time: 01:03 PM. dozen #: 2
+
+plain	jelly	coconut	honey-dip
+	  165	 160	 146	
+	  247	 177	 233	
+		 197	 260	
+		 223	 290	
+		 253	
+		 267	
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 15 time: 01:03 PM. dozen #: 3
+
+plain	jelly	coconut	honey-dip
+ 350	  310	 306	 358	
+ 384	  316	 351	
+	  332	 380	
+	  342		
+	  415		
+	  430		
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 15 time: 01:03 PM. dozen #: 4
+
+plain	jelly	coconut	honey-dip
+ 524	  483	 490	 518	
+ 599	  497	 491	 574	
+	  512		
+	  550		
+	  569		
+	  586		
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 15 time: 01:03 PM. dozen #: 5
+
+plain	jelly	coconut	honey-dip
+ 669	  677	 670	 701	
+ 718	  684	 671	 708	
+ 755	  792	 672	
+ 788			
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 15 time: 01:03 PM. dozen #: 6
+
+plain	jelly	coconut	honey-dip
+ 875	  831	 824	 855	
+ 920	  832	 863	 856	
+ 956	  900	 902	 857	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 15 time: 01:03 PM. dozen #: 7
+
+plain	jelly	coconut	honey-dip
+ 1049	  1014	 974	 1067	
+ 1084	  1015		
+ 1117	  1052		
+	  1053		
+	  1054		
+	  1055		
+	  1056		
+			
+			
+			
+			
+			
+
+Consumer thread#: 15 time: 01:03 PM. dozen #: 8
+
+plain	jelly	coconut	honey-dip
+ 1200	  1188	 1173	 1192	
+ 1245	  1189	 1214	 1231	
+ 1281	  1264		
+ 1317	  1265		
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 15 time: 01:03 PM. dozen #: 9
+
+plain	jelly	coconut	honey-dip
+ 1411	  1331	 1339	 1350	
+ 1447		 1340	 1351	
+ 1482		 1341	 1373	
+		 1342	 1454	
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 15 time: 01:03 PM. dozen #: 10
+
+plain	jelly	coconut	honey-dip
+ 1546	  1478	 1483	 1512	
+ 1584	  1479	 1484	 1593	
+ 1618	  1480	 1485	
+		 1581	
+			
+
+Consumer thread#: 17 time: 01:03 PM. dozen #: 1
+
+plain	jelly	coconut	honey-dip
+ 54	  44	 49	 49	
+ 55	  45	 50	 50	
+ 56	  46	 51	
+		 52	
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 17 time: 01:03 PM. dozen #: 2
+
+plain	jelly	coconut	honey-dip
+ 163	  166	 194	 155	
+ 182	  263		 171	
+ 219			 246	
+ 237			 292	
+ 265			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 17 time: 01:03 PM. dozen #: 3
+
+plain	jelly	coconut	honey-dip
+ 348	  409	 319	 324	
+ 375	  425	 347	 331	
+		 406	 340	
+			 355	
+			 434	
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 17 time: 01:03 PM. dozen #: 4
+
+plain	jelly	coconut	honey-dip
+ 474	  521	 439	 538	
+ 495		 514	 550	
+ 532		 550	 583	
+ 553			
+ 567			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 17 time: 01:03 PM. dozen #: 5
+
+plain	jelly	coconut	honey-dip
+ 694	  618	 632	 657	
+ 730	  636	 659	
+	  644	 660	
+	  651	 661	
+	  664		
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 17 time: 01:03 PM. dozen #: 6
+
+plain	jelly	coconut	honey-dip
+ 802	  806	 777	 881	
+ 837	  855	 801	 882	
+ 874	  856	 802	
+		 803	
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 17 time: 01:03 PM. dozen #: 7
+
+plain	jelly	coconut	honey-dip
+ 947	  957	 952	 999	
+ 978	  958	 979	
+ 1015	  988	 980	
+	  989		
+	  990		
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 17 time: 01:03 PM. dozen #: 8
+
+plain	jelly	coconut	honey-dip
+ 1094	  1028	 1015	 1109	
+ 1128		 1016	
+ 1161		 1017	
+ 1195		 1018	
+ 1240		 1211	
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 17 time: 01:03 PM. dozen #: 9
+
+plain	jelly	coconut	honey-dip
+ 1324	  1221	 1368	 1259	
+ 1360	  1222		 1405	
+ 1398			 1406	
+ 1438			 1407	
+			 1408	
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 17 time: 01:03 PM. dozen #: 10
+
+plain	jelly	coconut	honey-dip
+ 1521	  1513	 1411	 1516	
+ 1555	  1514	 1412	 1599	
+ 1589		 1413	
+ 1623		 1543	
+			
+
+
+
+Consumer thread#: 25 time: 01:03 PM. dozen #: 1
+
+plain	jelly	coconut	honey-dip
+ 80	  69	 77	 66	
+ 81	  70	 78	 67	
+ 82		 79	
+ 83		 80	
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 25 time: 01:03 PM. dozen #: 2
+
+plain	jelly	coconut	honey-dip
+ 172	  281	 185	 162	
+ 209	  295	 228	 298	
+ 246		 264	 313	
+ 299			
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 25 time: 01:03 PM. dozen #: 3
+
+plain	jelly	coconut	honey-dip
+ 361	  455	 384	 431	
+ 388		 419	 450	
+ 412		 420	 451	
+ 430		 421	
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 25 time: 01:03 PM. dozen #: 4
+
+plain	jelly	coconut	honey-dip
+ 538	  526	 484	 513	
+ 557	  598	 520	 573	
+ 572		 532	
+ 618		 559	
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 25 time: 01:03 PM. dozen #: 5
+
+plain	jelly	coconut	honey-dip
+ 689	  659	 685	 821	
+ 727	  762	 686	
+ 763	  763		
+ 794	  764		
+	  801		
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 25 time: 01:03 PM. dozen #: 6
+
+plain	jelly	coconut	honey-dip
+ 883	  945	 868	 894	
+ 925	  981	 907	 943	
+ 970		 911	 995	
+ 1004			
+			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 25 time: 01:03 PM. dozen #: 7
+
+plain	jelly	coconut	honey-dip
+ 1079	  1012		 1021	
+ 1112	  1042		 1022	
+ 1147	  1073		 1023	
+ 1182			 1154	
+ 1217			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 25 time: 01:03 PM. dozen #: 8
+
+plain	jelly	coconut	honey-dip
+ 1305	  1205	 1327	 1320	
+ 1340	  1206	 1383	 1377	
+ 1376	  1335		
+ 1416			
+ 1453			
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 25 time: 01:03 PM. dozen #: 9
+
+plain	jelly	coconut	honey-dip
+	  1433	 1431	 1470	
+	  1434	 1432	 1471	
+	  1435	 1433	 1472	
+	  1436	 1434	
+		 1435	
+			
+			
+			
+			
+			
+			
+			
+
+Consumer thread#: 25 time: 01:03 PM. dozen #: 10
+
+plain	jelly	coconut	honey-dip
+ 1583	  1476	 1532	 1510	
+	  1477	 1533	 1511	
+	  1504	 1534	
+	  1505	 1535	
+	  1506		
+		

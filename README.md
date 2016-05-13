@@ -1,6 +1,6 @@
 # cpp_work_at_uml
 
-cpp_work_at_uml
+cpp work at UMass Lowell
 <<<<<<< HEAD
 =======
 
